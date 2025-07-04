@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowUpTokens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media.discordapp.net/attachments/1009113295493533826/1390702741273313330/3d-background-with-white-cubes.jpg?ex=6869385b&is=6867e6db&hm=ff2f5107d80f1c02176a67b72fa8b1001eac3d48ecf52adfb990f72758bb03c7&=&format=webp&width=1344&height=960');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow */
+        }
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            background-color: #333;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        .menu a:hover {
+            background-color: #45a049;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            color: black; /* Changed text color to black */
+        }
+        .offer {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 30%;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adding text shadow for better visibility */
+        }
+        .button {
+            padding: 12px 30px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .button:hover {
+            background-color: #007B8C;
+        }
+        .token-image {
+            width: 200px; /* Reduced image size */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.6); /* Dark footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow */
+        }
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            margin-bottom: 10px;
+        }
+        .token-info {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .section-divider {
+            border-top: 2px solid #000;
+            margin-top: 30px;
+        }
+        .login-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            position: relative;
+            top: 20px;
+        }
+        .token-count {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+            background-color: #a8d08d; /* Green background for token count */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShowUpTokens</h1>
+        <p>Zakup teraz tokeny na ekskluzywne wydarzenia online!</p>
+    </header>
+    <div class="menu">
+        <a href="#login">Logowanie</a>
+        <a href="#buy">Kup teraz</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+
+    <!-- Logowanie -->
+    <div id="login" class="login-form">
+        <h3>Zaloguj się lub zarejestruj:</h3>
+        <form action="#" method="post">
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="Hasło" required><br><br>
+            <button type="submit" class="button">Zaloguj się</button>
+        </form>
+        <p>Nie masz konta? <a href="#">Zarejestruj się tutaj</a></p>
+    </div>
+
+    <div class="content">
+        <div class="token-count">Aktualna liczba żetonów: <strong>0</strong></div>
+
+        <!-- Oferta 1 -->
+        <div class="offer">
+            <img src="https://images.unsplash.com/photo-xyz" alt="Opis zdjęcia" style="width: 100%; border-radius: 8px;">
+            <h2>100 Tokenów – 12 zł</h2>
+            <p>Dostęp do ekskluzywnego kursu online o zarabianiu w internecie.</p>
+            <button class="button">Kup teraz</button>
+        </div>
+
+        <!-- Oferta 2 -->
+        <div class="offer">
+            <h2>500 Tokenów – 50 zł</h2>
+            <p>Wejście na zamknięte webinary z ekspertami w dziedzinie biznesu online.</p>
+            <button class="button">Kup teraz</button>
+        </div>
+
+        <!-- Oferta 3 -->
+        <div class="offer">
+            <h2>1000 Tokenów – 95 zł</h2>
+            <p>Dostęp do prywatnych streamów i zasobów edukacyjnych online.</p>
+            <button class="button">Kup teraz</button>
+        </div>
+
+        <!-- Sekcja rozdzielająca -->
+        <div class="section-divider"></div>
+
+        <!-- Zdjęcie tokenów -->
+        <div class="content">
+            <h2>Oferta tokenów</h2>
+            <p>Oto nasz token! Kup teraz i uzyskaj dostęp do ekskluzywnych wydarzeń!</p>
+            <img class="token-image" src="https://media.discordapp.net/attachments/1009113295493533826/1390700486750900234/tokeny-kryptowalutowe.png?ex=68693642&is=6867e4c2&hm=bf2b02c3893be3705d3146f4a976c9d03a71f1d66e7ad327a9a3ae603f9f3056&=&format=webp&quality=lossless" alt="Tokeny ShowUp">
+            <p>Tokeny dostępne w trzech ofertach: 100 za 12 zł, 500 za 50 zł, 1000 za 95 zł!</p>
+        </div>
+
+        <!-- Opinie -->
+        <div class="section-divider"></div>
+        <h3>Opinie użytkowników:</h3>
+        <div class="testimonial">
+            <p><strong>Marek Kowalczyk:</strong> "Świetna platforma, polecam! Tokeny dają dostęp do wartościowych materiałów." <strong>Ocena: 5/5</strong></p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Łukasz Nowakowski:</strong> "Bardzo zadowolona z zakupu. Wszystko działa płynnie!" <strong>Ocena: 5/5</strong></p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Agnieszka Różewicz:</strong> "Tokeny były łatwe do zakupu i zapewniły dostęp do naprawdę dobrych zasobów." <strong>Ocena: 4/5</strong></p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Wojciech Malinowski:</strong> "Bardzo szybka dostawa tokenów." <strong>Ocena: 5/5</strong></p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Julia Król:</strong> "Świetna platforma edukacyjna. Tokeny są wartościowe." <strong>Ocena: 4/5</strong></p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Oskar Zieliński:</strong> "Tokeny dały mi dostęp do ciekawych materiałów!" <strong>Ocena: 5/5</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Telefon: 123-456-789 | Email: kontakt@showuptokens.pl</p>
+        <p>Adres: ul. Przykładowa 10, 00-001 Warszawa</p>
+        <p>© 2025 ShowUpTokens. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
